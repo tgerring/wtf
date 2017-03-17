@@ -37,7 +37,7 @@ div.submit:hover {
 
 * {
     border: 0;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Helvetica', sans-serif;
     margin: 0;
     padding: 0;
     transition: background-color 0.5s linear;
@@ -67,14 +67,12 @@ div.socials > div > a > i {
 .workspace {
     height: 400px;
     left: 50%;
-    margin: -200px 0 0 -200px;
+    margin: -215px 0 0 -215px;
     position: absolute;
     top: 50%;
     width: 400px;
+    border: 15px solid slategray;
     box-shadow: 0 6px 10px -4px #222222;
-    border-radius: 90px 90px 90px 90px;
-    -moz-border-radius: 90px 90px 90px 90px;
-    -webkit-border-radius: 90px 90px 90px 90px;
 }
 .workspace>.menu {
     float: left;
@@ -85,10 +83,7 @@ div.socials > div > a > i {
     float: right;
     height: 100%;
     width: 400px;
-    background-color: wheat;
-    border-radius: 90px 90px 90px 90px;
-    -moz-border-radius: 90px 90px 90px 90px;
-    -webkit-border-radius: 90px 90px 90px 90px;
+    background-color: silver;
 }
 .workspace>.content .pagearea {
     box-sizing: border-box;
@@ -259,7 +254,8 @@ div.socials > div > a > i {
 }
 
 #page-cover {
-    background: url('../images/unicorn01-256.png');
+    background: url('../images/unicorn_x4.png');
+    background-repeat: no-repeat;
     background-size: cover;
     box-sizing: border-box;
     height: 100%;
@@ -287,11 +283,10 @@ div.socials > div > a > i {
 #page-cover>div.info {
     bottom: -75px;
     position: absolute;
-    right: 20px;
-    text-shadow: 1px 1px 2px rgba(152, 150, 150, 1);
+    right: 0;
+    text-shadow: 2px 2px 4px rgba(152, 150, 150, 1);
 }
 #page-cover>div.info>p.name {
-    font-size: 50px;
     text-align: right;
     color: slategrey;
 }
@@ -461,4 +456,8 @@ div.socials > div > a > i {
 
 div#bb-bookblock {
     height: 100%;
+}
+
+p.name>a>i {
+    color: black;
 }
