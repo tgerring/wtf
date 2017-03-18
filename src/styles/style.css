@@ -9,7 +9,7 @@ html, body {
     overflow: hidden;
 }
 body {
-    /* background: url('../images/bgtile.png'); */
+    background: url('../images/progress2.png');
 }
 code, samp, pre {
     font-family: monospace;
@@ -111,9 +111,9 @@ div.socials > div > a > i {
     width: 48%;
     font-size: 75%;
 }
-.workspace>.content .pagearea>div.bottom ul.gallery>li.gallery-left {
+/*.workspace>.content .pagearea>div.bottom ul.gallery>li.gallery-left {
     padding-right: 4%;
-}
+}*/
 .workspace>.content .pagearea>div.bottom ul.gallery>li>a {
     margin-bottom: 15px;
 }
@@ -211,6 +211,7 @@ div.socials > div > a > i {
     padding: 4px 10px;
     text-transform: uppercase;
     /*width: 336px;*/
+    clear: both;
 }
 
 #page-cover {

@@ -103,7 +103,7 @@ Page.init();
 
 $(function() {
     /* Portfolio Hover*/
-    $(' #da-thumbs > li ').each( function() { $(this).hoverdir(); } );
+    $(' .da-thumbs > li ').each( function() { $(this).hoverdir(); } );
   
     /* Resume Accordion */
     $(".workspace>.content .pagearea.resume>div.bottom ul li").eq(0).find('h3').css('background-color','#636363');
@@ -126,11 +126,6 @@ $(function() {
           $('.workspace>.content .pagearea>div.bottom').scrollTop(0);
           $(".ps-scrollbar-y").css("height",0);
           $(".ps-scrollbar-y-rail").click();
-        });
-        
-        $(this).parent().find('td.skill-bar>pre').css('width','0');
-        $(this).parent().find('td.skill-bar>pre').each(function(){
-          $(this).animate({width:$(this).data('skill')+"%"},1500);
         });
       }
     });
