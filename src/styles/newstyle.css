@@ -32,3 +32,10 @@
     height: 200px;
     width: 200px;
 }
+#page-cover h1 {
+    font-size: 72pt;
+}
+#page-cover h2 {
+    font-size: 56pt;
+    text-align: right;
+}
