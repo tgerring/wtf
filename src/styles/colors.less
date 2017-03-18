@@ -1,10 +1,11 @@
-@menucolor: #cccccc;
+@menucolor: #708090;
 @titlepagecolor: #333333;
 @covericoncolor: #000000;
 @alttextcolor: #000A24;
 @textcolor: #777777;
 @white: #FFFFFF;
 @purp: #561f5b;
+@submenucolor: #999999;
 
 
 i {
@@ -47,8 +48,11 @@ i {
   color: @alttextcolor;
 }
 .workspace>.content .pagearea.resume>div.bottom ul li h3 {
-    background-color: @menucolor !important;
+    background-color: @submenucolor !important;
 }
 .workspace>.content .pagearea>div.bottom ul.filters>li.active {
     background: menucolor;
+}
+.workspace>.content .pagearea>div.bottom ul.filters>li {
+    background: @submenucolor;
 }

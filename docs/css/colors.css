@@ -8,7 +8,7 @@ i {
 input[type='submit'],
 .skill-bar > pre,
 .ps-container .ps-scrollbar-y {
-  background-color: #cccccc;
+  background-color: #708090;
 }
 .color-text,
 .title,
@@ -21,11 +21,11 @@ h1 {
 }
 #page-cover > .socials > div:hover,
 div.submit:hover {
-  background-color: #cccccc !important;
+  background-color: #708090 !important;
   transition: all 0.5s linear;
 }
 .inputerror {
-  border-color: #cccccc !important;
+  border-color: #708090 !important;
 }
 .menu-item-block > p {
   color: #ffffff;
@@ -35,8 +35,11 @@ div.submit:hover {
   color: #000a24;
 }
 .workspace > .content .pagearea.resume > div.bottom ul li h3 {
-  background-color: #cccccc !important;
+  background-color: #999999 !important;
 }
 .workspace > .content .pagearea > div.bottom ul.filters > li.active {
   background: menucolor;
+}
+.workspace > .content .pagearea > div.bottom ul.filters > li {
+  background: #999999;
 }

@@ -86,7 +86,6 @@ div.socials > div > a > i {
     margin-bottom: 20px;
 }
 .workspace>.content .pagearea>div.bottom ul.filters>li {
-    background: #999999;
     color: #FFFFFF;
     cursor: pointer;
     display: inline;
@@ -218,8 +217,8 @@ div.socials > div > a > i {
     background: url('../images/unicorn_x4.png');
     background-size: cover;
     box-sizing: border-box;
-    height: 100%;
-    width: 100%;
+    height: 66%;
+    width: 66%;
 }
 #page-cover>div.socials {
     position: absolute;
@@ -245,6 +244,7 @@ div.socials > div > a > i {
     position: absolute;
     right: 20px;
     text-shadow: 1px 1px 2px rgba(152, 150, 150, 1);
+    color: slategray;
 }
 #page-cover>div.info>p.name {
     font-size: 50px;
