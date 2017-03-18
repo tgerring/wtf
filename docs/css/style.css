@@ -1,43 +1,6 @@
-i {
-  color: #ffffff;
-}
-.textcolor {
-  color: #777777 !important;
-}
-.color,
-input[type='submit'],
-.skill-bar > pre,
-.ps-container .ps-scrollbar-y {
-  background-color: #b3ddf2;
-}
-.color-text,
-.title,
-.level,
-h1 {
-  color: #333333;
-}
-#page-cover > .socials > div > a > i {
-  color: #333333;
-}
-#page-cover > .socials > div:hover,
-div.submit:hover {
-  background-color: #b3ddf2 !important;
-  transition: all 0.5s linear;
-}
-.inputerror {
-  border-color: #b3ddf2 !important;
-}
-.menu-item-block > p {
-  color: #ffffff;
-}
-.workspace > .content .pagearea.profile > div.bottom p,
-.workspace > .content .pagearea.contact > div.bottom p {
-  color: #000a24;
-}
-
 * {
     border: 0;
-    font-family: 'Helvetica', sans-serif;
+    font-family: 'Lato', sans-serif;
     margin: 0;
     padding: 0;
     transition: background-color 0.5s linear;
@@ -46,7 +9,7 @@ html, body {
     overflow: hidden;
 }
 body {
-    background-color: white;
+    /* background: url('../images/bgtile.png'); */
 }
 code, samp, pre {
     font-family: monospace;
@@ -65,13 +28,12 @@ div.socials > div > a > i {
     float: right;
 }
 .workspace {
-    height: 256;
+    height: 700px;
     left: 50%;
-    margin: -143 0 0 -143;
+    margin: -350px 0 0 -436px;
     position: absolute;
     top: 50%;
-    width: 256;
-    border: 15px solid slategray;
+    width: 872px;
     box-shadow: 0 6px 10px -4px #222222;
 }
 .workspace>.menu {
@@ -82,8 +44,7 @@ div.socials > div > a > i {
 .workspace>.content {
     float: right;
     height: 100%;
-    width: 100%;
-    background-color: silver;
+    width: 802px;
 }
 .workspace>.content .pagearea {
     box-sizing: border-box;
@@ -136,9 +97,7 @@ div.socials > div > a > i {
     text-transform: uppercase;
     margin-right: 10px;
 }
-.workspace>.content .pagearea>div.bottom ul.filters>li.active {
-    background: #B3DDF2;
-}
+
 .workspace>.content .pagearea>div.bottom ul.gallery {
     box-sizing: border-box;
     height: auto;
@@ -168,7 +127,8 @@ div.socials > div > a > i {
 
 .workspace>.content .pagearea.profile>div.bottom img.profileImage {
     height: auto;
-    width: 335px;
+    border: 10px solid slategray;
+    /*width: 335px;*/
 }
 .workspace>.content .pagearea.profile>div.bottom>p, .workspace>.content .pagearea.resume>div.bottom>p, .workspace>.content .pagearea.portfolio>div.bottom>p, .workspace>.content .pagearea.contact>div.bottom>p {
     box-sizing: border-box;
@@ -198,7 +158,8 @@ div.socials > div > a > i {
 .workspace>.content .pagearea.resume>div.bottom ul li {
     box-sizing: border-box;
     margin-bottom: 15px;
-    width: 336px;
+    margin-right: 15px;
+    /*width: 336px;*/
 }
 .workspace>.content .pagearea.resume>div.bottom ul li div {
     display: none;
@@ -242,7 +203,6 @@ div.socials > div > a > i {
     height: 22px;
 }
 .workspace>.content .pagearea.resume>div.bottom ul li h3 {
-    background-color: #B3DDF2 !important;
     box-sizing: border-box;
     color: #FFFFFF;
     cursor: pointer;
@@ -250,12 +210,11 @@ div.socials > div > a > i {
     font-weight: bold;
     padding: 4px 10px;
     text-transform: uppercase;
-    width: 336px;
+    /*width: 336px;*/
 }
 
 #page-cover {
     background: url('../images/unicorn_x4.png');
-    background-repeat: no-repeat;
     background-size: cover;
     box-sizing: border-box;
     height: 100%;
@@ -271,24 +230,24 @@ div.socials > div > a > i {
     box-sizing: border-box;
     cursor: pointer;
     float: left;
-    height: 35px;
+    /*height: 35px;*/
     margin-left: 5px;
     padding: 6px;
-    width: 35px;
+    /*width: 35px;*/
 }
 #page-cover>div.socials>div>a>div.icon {
     height: 23px;
     width: 23px;
 }
 #page-cover>div.info {
-    bottom: -65px;
+    bottom: 20px;
     position: absolute;
-    right: 0;
-    text-shadow: 2px 2px 4px rgba(152, 150, 150, 1);
+    right: 20px;
+    text-shadow: 1px 1px 2px rgba(152, 150, 150, 1);
 }
 #page-cover>div.info>p.name {
+    font-size: 50px;
     text-align: right;
-    color: slategrey;
 }
 #page-cover>div.info>p.occupation {
     font-size: 25px;
@@ -316,7 +275,6 @@ div.socials > div > a > i {
 }
 #profile-cover {
     background: url('../images/covers/moon.jpg');
-    /*background: url('../images/covers/machu-picchu.jpg');*/
     height: 100%;
     width: 100%;
 }
@@ -408,7 +366,7 @@ div.socials > div > a > i {
     width: 175px;
 }
 #resume:hover {
-    width: 175px;
+    width: 210px;
 }
 #portfolio:hover {
     width: 210px;
@@ -420,6 +378,203 @@ div.socials > div > a > i {
     margin-top: 20px !important;
 }
 
+/* Responsive */
+
+@media only screen and (max-height: 760px), (max-width: 875px) {
+    .workspace {
+        height: 631px;
+        margin: -315px 0 0 -393px;
+        width: 785px;
+    }
+    .workspace>.content {
+        width: 715px;
+    }
+    .workspace>.content .pagearea.profile>div.bottom img.profileImage, .workspace>.content .pagearea.resume>div.bottom ul li h3, .workspace>.content .pagearea.resume>div.bottom ul li, .workspace>.content .pagearea.contact>div.bottom iframe.map, .workspace>.content .pagearea.contact>div.bottom table tr td input[type='text'], .workspace>.content .pagearea.contact>div.bottom table tr td textarea {
+        width: 292px;
+    }
+    .workspace>.content .pagearea.profile>div.bottom p, .workspace>.content .pagearea.portfolio>div.bottom p, .workspace>.content .pagearea.contact>div.bottom p {
+        font-size: 13px;
+    }
+    .workspace>.content .pagearea.profile>div.bottom table {
+        margin-top: 10px;
+    }
+    .workspace>.content .pagearea>div.bottom {
+        height: 540px;
+    }
+    #profile-cover>div.info>p.name, #resume-cover>div.info>p.name, #portfolio-cover>div.info>p.name, #contact-cover>div.info>p.name {
+        font-size: 65px;
+    }
+    .workspace>.content .pagearea>div.top>div.socials>div {
+        height: 25px;
+        width: 25px;
+    }
+    .workspace>.content .pagearea>div.top>div.socials>div>a>div.icon {
+        background-size: cover;
+        height: 16px;
+        width: 16px;
+    }
+    .workspace>.content .pagearea>div.bottom ul.gallery>li>a>img {
+        max-height: 140px;
+    }
+    /*    .workspace>.content .pagearea>div.top>div.socials>div>a>div.icon.twitter { background-position: -16px 0;}
+    .workspace>.content .pagearea>div.top>div.socials>div>a>div.icon.gplus { background-position: -32px 0;}
+    .workspace>.content .pagearea>div.top>div.socials>div>a>div.icon.dribbble { background-position: -48px 0;}
+*/
+    
+    .workspace>.content .pagearea>div.top {
+        padding-right: 26px;
+    }
+    #skills tr td {
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width: 786px), (max-height: 630px) {
+    html, body {
+        height: 100%;
+        width: 100%;
+    }
+    .workspace {
+        left: 0;
+        margin: 0 auto;
+        max-width: 428px;
+        height: 100%;
+        position: relative;
+        top: 0;
+        width: 100%;
+    }
+    .workspace>.menu {
+        float: none;
+        height: 45px;
+        width: 100%;
+    }
+    .workspace>.menu>div {
+        text-align: center;
+        width: 100%;
+    }
+    .workspace>.menu>div>ul {
+        list-style-type: none;
+        padding: 5px 0;
+        width: 355px;
+        margin: 0 auto;
+    }
+    .workspace>.menu>div>ul>li {
+        height: 20px;
+        margin-bottom: 0;
+        width: 25px;
+        float: left;
+        margin: 0 23px;
+    }
+    .workspace>.content {
+        width: 100%;
+    }
+    .workspace>.content .pagearea {
+        padding: 20px 25px;
+    }
+    .workspace>.content .pagearea>div.bottom {
+        box-sizing: border-box;
+        height: 100%;
+        padding-bottom: 85px !important;
+    }
+    .workspace>.content .pagearea>div.top, .workspace>.content .pagearea.profile>div.bottom p, .workspace>.content .pagearea.contact>div.bottom p, .workspace>.content .pagearea>div.bottom ul.gallery {
+        padding-right: 0;
+    }
+    .workspace>.content .pagearea>div.bottom ul.gallery>li>a>img {
+        max-height: 181px;
+    }
+    #home:hover {
+        width: 35px;
+    }
+    #profile:hover {
+        width: 35px;
+    }
+    #resume:hover {
+        width: 35px;
+    }
+    #portfolio:hover {
+        width: 35px;
+    }
+    #contact:hover {
+        width: 35px;
+    }
+    .bb-custom-side {
+        width: 100% !important;
+    }
+    .coverside {
+        display: none;
+    }
+    .workspace>.content .pagearea.profile>div.bottom img.profileImage, .workspace>.content .pagearea.resume>div.bottom ul li h3, .workspace>.content .pagearea.resume>div.bottom ul li, .workspace>.content .pagearea.contact>div.bottom iframe.map, .workspace>.content .pagearea.contact>div.bottom form table tr td input[type='text'], .workspace>.content .pagearea.contact>div.bottom form table tr td textarea, .workspace>.content .pagearea.contact>div.bottom form table {
+        width: 100%;
+    }
+    .ps-scrollbar-y, .ps-scrollbar-x {
+        display: none;
+    }
+    #page-cover>div.info {
+        bottom: 65px;
+        float: right;
+        position: absolute;
+        right: 15px;
+    }
+    #page-cover>div.info>p.name {
+        font-size: 40px;
+        text-align: right;
+
+    }
+    #page-cover>div.info>p.occupation {
+        font-size: 20px;
+        text-align: right;
+    }
+    .workspace>.content .pagearea>div.bottom>table {
+        width: 100%;
+    }
+    .menu-item-block, .menu-item {
+        background-color: transparent !important;
+    }
+    #bb-bookblock {
+        z-index: 9999 !important;
+    }
+}
+@media only screen and (max-width: 370px) {
+    .workspace>.menu>div>ul>li {
+        margin: 0 20px;
+    }
+    .workspace>.menu>div>ul {
+        width: 325px;
+    }
+}
+@media only screen and (max-width: 330px) {
+    .workspace>.menu>div>ul>li {
+        margin: 0 13px;
+    }
+    .workspace>.menu>div>ul {
+        width: 255px;
+    }
+    #page-cover>div.info>p.name {
+        font-size: 50px;
+    }
+    #page-cover>div.info>p.occupation {
+        font-size: 30px;
+        margin-top: -10px;
+    }
+    #skills tr td {
+        font-size: 12px;
+    }
+    .workspace>.content .pagearea>div.top>p {
+        font-size: 16px;
+        padding-top: 5px;
+    }
+}
+@media only screen and (max-width: 270px) {
+    .workspace>.content .pagearea>div.top>p {
+        font-size: 14px;
+        padding-top: 6px;
+    }
+    #skills tr td {
+        font-size: 11px;
+    }
+    .workspace>.content .pagearea>div.bottom ul.filters>li {
+        padding: 5px 8px;
+    }
+}
 
 #profile-page div.socials {
     text-align: center;
@@ -450,14 +605,11 @@ div.socials > div > a > i {
 }
 
 
-.bb-item {
-    height: 100%;
+div.info>p.name {
+    margin-top: 1em;
+    font-size: 150%;
+    font-weight: bold;
 }
-
-div#bb-bookblock {
-    height: 100%;
-}
-
-p.name>a>i {
-    color: black;
+div.info>p.occupation {
+    font-size: 150%;
 }

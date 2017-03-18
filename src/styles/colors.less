@@ -1,0 +1,54 @@
+@menucolor: #cccccc;
+@titlepagecolor: #333333;
+@covericoncolor: #000000;
+@alttextcolor: #000A24;
+@textcolor: #777777;
+@white: #FFFFFF;
+@purp: #561f5b;
+
+
+i {
+  color: @white;
+}
+
+.textcolor {
+  color: @textcolor !important;
+}
+
+
+.color,input[type='submit'],.skill-bar>pre,.ps-container .ps-scrollbar-y{
+    background-color: @menucolor;
+}
+
+.color-text, .title, .level, h1{
+    color: @titlepagecolor;
+}
+
+#page-cover>.socials>div>a>i {
+  color: @titlepagecolor;
+}
+
+#page-cover>.socials>div:hover,div.submit:hover {
+    background-color: @menucolor !important;
+    
+    transition: all 0.5s linear;
+}
+
+.inputerror {
+  border-color: @menucolor !important;
+}
+
+.menu-item-block>p {
+  color: @white;
+}
+
+.workspace>.content .pagearea.profile>div.bottom p,
+.workspace>.content .pagearea.contact>div.bottom p {
+  color: @alttextcolor;
+}
+.workspace>.content .pagearea.resume>div.bottom ul li h3 {
+    background-color: @menucolor !important;
+}
+.workspace>.content .pagearea>div.bottom ul.filters>li.active {
+    background: menucolor;
+}

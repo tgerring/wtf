@@ -1,0 +1,403 @@
+extends layouts/main
+
+block title
+  title Taylor Gerring - Blockchain Consulting 
+
+block description
+  meta(name='description', content='Blockchain Consulting Group is a IT Consultation specializing in blockchain education & training.')
+
+block content
+  div.workspace
+    div.menu.color
+      div
+        ul
+          li
+            div.menu-item-block.color#home
+              div.menu-item.color
+                i.fa.fa-home.fa-lg.fa-fw
+              p Home
+          li
+            div.menu-item-block.color#portfolio
+              div.menu-item.color
+                i.fa.fa-camera-retro.fa-lg.fa-fw
+              p Portfolio
+          li
+            div.menu-item-block.color#resume
+              div.menu-item.color
+                i.fa.fa-file-text.fa-lg.fa-fw
+              p Glossary
+          li
+            div.menu-item-block.color#profile
+              div.menu-item.color
+                i.fa.fa-user.fa-lg.fa-fw
+              p Profile
+    div.content
+      div#bb-bookblock.bb-bookblock
+
+        div.bb-item
+          div#page-cover
+            div.socials
+              div
+                a(href='https://www.instagram.com/blockchainwtf/')
+                  i.fa.fa-instagram.fa-2x.fa-fw
+              div
+                a(href='https://twitter.com/BlockchainWTF')
+                  i.fa.fa-twitter.fa-2x.fa-fw
+              div
+                a(href='https://www.facebook.com/BlockchainWTF-402533166776310/')
+                  i.fa.fa-facebook.fa-2x.fa-fw
+              div
+                a(href='https://www.youtube.com/channel/UCKENI1wZKvZFjtgWGOq2pCQ')
+                  i.fa.fa-youtube.fa-2x.fa-fw
+              //- div
+              //-   a(href='mailto:info@blockchain.wtf')
+              //-     i.fa.fa-envelope.fa-2x.fa-fw
+
+        div.bb-item
+          div.bb-custom-side.coverside
+            div#portfolio-cover
+              div.info.color-text
+                p.occupation Portfolio
+          div#portfolio-page.bb-custom-side.pagearea.portfolio
+            div.top.color-text
+              p
+                i.fa.fa-camera-retro.color-text &nbsp;
+                span Portfolio
+            div.bottom
+              ul.filters
+                li.all.active All
+                li.events Talks
+                li.photos Slides
+                li.writings Articles
+              ul.gallery.da-thumbs#da-thumbs
+
+                li.all.events
+                  a(href="https://www.youtube.com/watch?v=Swdb-Z_4JmI")
+                    img(src="images/thumbnails/youtube-ltbdao.jpg" alt="Let's Talk Bitcoin - TheDAO")
+                    div
+                      span Lets Talk Bitcoin - TheDAO
+
+                li.all.events
+                  a(href="https://www.youtube.com/watch?v=fp7-ZBzJ9XE")
+                    img(src="images/thumbnails/glimpseofthefuture.jpg" alt="Ethereum NZ - Improving the World Through Decentrilization")
+                    div
+                      span Improving the World Through Decentrilization
+
+                li.all.events
+                  a(href="https://coindesk.wistia.com/medias/g9ev7z3ijx")
+                    img(src="images/thumbnails/consensus2016-smartcontracts.jpg" alt="Consensus 2016 - Smart Contract Panel")
+                    div
+                      span Unlocking the Power of Smart Contracts
+
+                li.all.events
+                  a(href="https://www.youtube.com/watch?v=NSIs_n9UylA")
+                    img(src="images/thumbnails/atlantameetup-20160427.jpg" alt="Atlanta Bitcoin Meetup - Ethereum Intro")
+                    div
+                      span Atlanta Bitcoin Meetup - 2016.04.27
+                li.all.events
+                  a(href="https://www.youtube.com/watch?v=abm9u5aomF0")
+                    img(src="images/thumbnails/zurichmeetup-20160419.jpg" alt="Zurich Ethereum Meetup - The Future of Ethereum")
+                    div
+                      span Zurich Ethereum Meetup - 2016.04.19
+                li.all.photos
+                  a(href="slides/ethereum-pastpresentfuture.pdf")
+                    img(src="images/thumbnails/ethereum-pastpresentfuture.jpg" alt="Ethereum - Past, Present, &amp; Future")
+                    div
+                      span Ethereum - Past, Present, &amp; Future
+                li.all.events
+                  a(href="https://www.brighttalk.com/webcast/13689/196365")
+                    img(src="images/thumbnails/brighttalk-blockchainlending.jpg" alt="BrightTALK panel - Blockchain in Lending")
+                    div
+                      span BrightTALK - Blockchain in Lending
+                li.all.photos
+                  a(href="slides/what-is-blockchain.pdf")
+                    img(src="images/thumbnails/what-is-blockchain.jpg" alt="What is &ldquo; Blockchain&rdquo;?")
+                    div
+                      span What is &ldquo;Blockchain&rdquo;?
+                li.all.events
+                  a(href="https://www.brighttalk.com/webcast/13689/193833")
+                    img(src="images/thumbnails/brighttalk-panel.jpg" alt="BrightTALK panel - The Great Bitcoin Debate")
+                    div
+                      span BrightTALK - The Great Bitcoin Debate
+                li.all.photos
+                  a(href="slides/great-bitcoin-debate.pdf")
+                    img(src="images/thumbnails/great-bitcoin-debate.png" alt="The Great Bitcoin Debate")
+                    div
+                      span The Great Bitcoin Debate
+                li.all.events
+                  a(href="https://www.youtube.com/watch?v=oKeYTx5Kvao")
+                    img(src="images/thumbnails/orlandodevs-meetup.jpg" alt="Orlando Devs meetup")
+                    div
+                      span OrlandoDevs meetup - 2016.03.03
+                li.all.photos
+                  a(href="slides/blockchains101.pdf")
+                    img(src="images/thumbnails/slides-blockchains101.jpg" alt="Blockchains 101: Decentralisation for Developers")
+                    div
+                      span Blockchains for Developers
+                li.all.events
+                  a(href="https://www.youtube.com/watch?v=2y4KHRH7uk8")
+                    img(src="images/thumbnails/youtube-davidseaman.jpg" alt="Chat with David Seaman")
+                    div
+                      span Chat with David Seaman
+                li.all.events
+                  a(href="https://www.youtube.com/watch?v=UWnAtyrFHc0")
+                    img(src="images/thumbnails/youtube-thedailydecrypt.jpg" alt="the Daily Decrypt")
+                    div
+                      span The Daily Decrypt
+                li.all.photos
+                  a(href="slides/ethereum-in-the-enterprise.pdf")
+                    img(src="images/thumbnails/slides-enterprise.jpg" alt="Ethereum in the Enterprise Environment")
+                    div
+                      span Ethereum as an Enterprise Tool
+                li.all.events
+                  a(href="https://www.youtube.com/watch?v=HXNWhXuMNpw")
+                    img(src="images/thumbnails/youtube-devcon1.jpg" alt="DEVCON1")
+                    div
+                      span DEVCON1
+                li.all.writings
+                  a(href="https://blog.ethereum.org/2014/08/18/building-decentralized-web/")
+                    img(src="images/thumbnails/article-decentralized-web.jpg" alt="building the decentralized web")
+                    div
+                      span building the decentralized web
+                li.all.writings
+                  a(href="http://bitcoinmagazine.com/9867/ethereum-dapps-rise-new-internet/")
+                    img(src="images/thumbnails/article-ethereumdappsnewinternet.jpg" alt="Ethereum, Dapps, and the rise of a new Internet")
+                    div
+                      span Ethereum, Dapps, and the rise of a new Internet
+                li.all.writings
+                  a(href="http://letstalkbitcoin.com/can-bitmessage-replace-email/")
+                    img(src="images/thumbnails/article-bitmessagereplaceemail.jpg" alt="Can BitMessage Replace Email?")
+                    div
+                      span Can BitMessage Replace Email?
+
+        div.bb-item
+          //- div.bb-custom-side.coverside
+          //-   div#resume-cover
+          //-     div.info.color-text
+          //-       p.occupation Information Architect
+          div#resume-page.pagearea.resume
+            div.top.color-text
+              p
+                i.fa.fa-file-text.color-text &nbsp;
+                span Glossary
+            div.bottom
+              ul
+                li
+                  h3
+                    i.fa.fa-building.fa-fw
+                    span Definitions
+                    span.pull-right
+                      i.fa.fa-fw.fa-plus
+                  div
+                    ul
+                      
+                      li
+                        dl
+                          dt Blockchain
+                          dd A distributed database of chronologically ordered transactions; these are all of the validated transactions that have ever been executed.
+
+                      li
+                        dl
+                          dt Bitcoin
+                          dd A type of digital currency in which encryption techniques are used to regulate the generation of units of currency and verify the transfer of funds, operating independently of a central bank.
+
+                      li
+                        dl
+                          dt Alt Coins
+                          dd The word “altcoin” is an abbreviation of “Bitcoin alternative,” and thus describes every single cryptocurrency except for Bitcoin. Altcoins are referred to as Bitcoin alternatives because, at least to some extent, most altcoins hope to either replace or improve upon at least one Bitcoin component.
+
+
+                      li
+                        dl
+                          dt Decentralization
+                          dd NO controlling central party. Uses p2p networks.
+
+                      li
+                        dl
+                          dt Consensus Algorithm
+                          dd A concept in computer science that typically causes a fundamental problem in distributed computing and multi-agent systems where systems are required to agree among a number of processes or agents for a single data value.
+
+                      li
+                        dl
+                          dt Address
+                          dd Used to receive and send transactions on the a blockchain network. It contains a string of alphanumeric characters, but can also be represented as a scannable QR code.
+
+                      li
+                        dl
+                          dt P2P Networks
+                          dd Commonly abbreviated as P2P networks, are a distributed application architecture in which peers, or nodes, are equally privileged and equal participants in the computing tasks or fulfilling work loads on the network. The tasks and work is distributed evenly, and form a “peer-to-peer network of nodes”.
+
+                      li
+                        dl
+                          dt Wallet
+                          dd A “wallet” is basically the Bitcoin equivalent of a bank account. It allows you to receive bitcoins, store them, and then send them to others. There are two main types of wallets. A software wallet is one that you install on your own computer or mobile device.
+
+
+                      li
+                        dl
+                          dt Asymmetric Encryption
+                          dd Asymmetric encryption, also known as public-key cryptography, is a cryptographic system that uses public keys and private keys. Public keys are keys that can be dispersed widely, whereas private keys are keys that are only known to the owner. In this type of cryptographic system, public keys can be used by anyone to encrypt or verify a message for a particular receiver. Private keys are what is used to decrypt or sign a message; only the private key of the receiver can decrypt that message.
+
+                      li
+                        dl
+                          dt Distributed Ledger
+                          dd A distributed ledger (also called shared ledger) is a consensus of replicated, shared, and synchronized digital data geographically spread across multiple sites, countries, or institutions. There is no central administrator or centralised data storage.
+
+                      li
+                        dl
+                          dt Merkle Tree
+                          dd Merkle data tries are also known as hash trees or merkle trees. This reference to “trees” comes from a type of data structure that is similar to a tree, with root values and subtrees branching from parent nodes. This, therefore represents a set of linked nodes. Hash trees are useful for verifying any kind of data that is stored, transferred, or handled between computers. Currently, hash trees are mainly used to ensure that blocks that are received from other peers are unaltered and that fake blocks are not sent.
+
+                      li
+                        dl
+                          dt Blocks
+                          dd Are filled with transactions from the network, and as the transactions are validated, they are compiled into the blockchain permanently.
+
+                      li
+                        dl
+                          dt Hash Function
+                          dd The hash function takes an input of any length (a message, for example), and returns a fixed-length string of numbers and letters, which is the hash value (also known as a message digest, digital fingerprint, or digest). The hash value, or digest, is the digital signature. This means that a person who knows the hash value cannot know the original message, but the person who knows the original message can prove the hash value is created from that message. When digests are equal, it confirms that the message has not been modified or changed since it was signed.
+
+                      li
+                        dl
+                          dt Nonce
+                          dd A nonce is an arbitrary number used in cryptography to ensure uniqueness and prevent the re-running of transactions (known as a replay attack). The value of PoW algorithms is that there is no better strategy to find such a nonce than enumerating all possibilities, however verification of a solution is relatively minor. Since outputs have a uniformly random distribution, it can be guaranteed that, on average, the time needed to find such a nonce is dependant on the difficulty threshold. This makes it possible to control the time of finding a new block simply by adjusting the difficulty.
+
+                      li
+                        dl
+                          dt Dapps
+                          dd Decentralized applications
+
+                      li
+                        dl
+                          dt Exchanges
+                          dd A place to buy and sell cryptocurrency
+
+                      li
+                        dl
+                          dt Double Spending
+                          dd A double spend is an attack where the given set of coins is spent in more than one transaction. There are a couple main ways to perform a double spend: Send two conflicting transactions in rapid succession into the Bitcoin network. This is called a race attack
+
+                      li
+                        dl
+                          dt Gas
+                          dd is the resource cost of the Ethereum Virtual Machine. Gas and Ether are often used interchangeably, but they are not the same. Ether is used to pay for gas, and from there, system computations; but Ether is not gas. In order for transactions to be sent and executed on, the sender must pay a fee in units of gas. Each transactions fee depends on the operations, and therefore resources, required to compute the transaction.
+
+
+
+                      li
+                        dl
+                          dt Ethereum
+                          dd Ethereum is a public blockchain-based distributed computing platform, featuring smart contract functionality. It provides a decentralized virtual machine, the Ethereum Virtual Machine (EVM),
+
+
+                      li
+                        dl
+                          dt Ether (token)
+                          dd Ether is used within the platform to execute peer-to-peer transactions and contracts. Ether is the currency used within Ethereum to pay for resource consumption on the network. This is done indirectly through exchanging Ether for “gas”, which will be explained in-depth in the next section. For shorthand, Ether is often abbreviated as ETH. Ether is a unique cryptocurrency because it is also used as a form of “cryptofuel” for the Ethereum EVM, in the sense that it is used to pay for computations done within the EVM.
+
+
+                      li
+                        dl
+                          dt Cryptography
+                          dd The use of mathematics to create codes and ciphers that can be used to conceal information. Used as the basis for the mathematical problems used to verify and secure transactions on the blockchain.
+
+
+                      li
+                        dl
+                          dt Receipt
+                          dd Every transaction is time stamped and given a hash tx
+
+                      li
+                        dl
+                          dt Smart contracts
+                          dd Smart contracts also known as a smart property are computer protocols that facilitate, verify, or enforce the negotiation or performance of a contract, or that make a contractual clause unnecessary. Smart contracts often emulate the logic of contractual clauses.
+                      li
+                        dl
+                          dt EVM
+                          dd The Ethereum Virtual Machine, or EVM, is the protocol that handles the computational aspects and internal state of the blockchain. This can be considered the “decentralized computer” that is able to maintain the internal database and enables the execution of code. Every operation that is executed in the EVM is simultaneously executed on every single node.
+                      li
+                        dl
+                          dt PoW (Proof of Work)
+                          dd A system that ties mining capability to computational power. Blocks must be hashed, which is in itself an easy computational process, but an additional variable is added to the hashing process to make it more difficult. When a block is successfully hashed, the hashing must have taken some time and computational effort. Thus, a hashed block is considered proof of work.
+
+                      li
+                        dl
+                          dt PoS (Proof of Stake)
+                          dd An alternative to proof of work, in which your existing stake in a currency (the amount of that currency that you hold) is used to calculate the amount of that currency that you can mine. “Virtualized” mining
+
+                      li
+                        dl
+                          dt Scalability
+                          dd The capacity to be changed in size or scale to handle ongoing demand for blockchain network resources.
+
+                      li
+                        dl
+                          dt Light Client
+                          dd Light client is a protocol that allows users with lower capacities than full nodes to maintain high security assurance about a state in the network or verify transactions. Full security is only possible for full nodes, but by implementing light client's, smaller amounts of data can be processed and verified that are of importance to the user, therefore leaving contracts of imperative security and trust to full nodes.
+
+                      li
+                        dl
+                          dt Sharding
+                          dd Sharding will allow for parallel processing such that not all nodes need to validate each transaction. The goal is to implement the EVM as a replicated distributed virtual machine.
+
+                      li
+                        dl
+                          dt Mining
+                          dd Through mining, the users secure the network and verify computation. In the current systems, including Bitcoin’s blockchain, miners are incentivized to validate transactions based of off Proof-of-Work (PoW) protocol, fees, and protocol subsidies. Proof-of-Stake (PoS) is the upcoming, virtualized system of incentivization for validating transactions. Both of these systems provide economic guarantees and a form of consensus by bet, but Proof-of-Stake relies on the betting concept more so.
+                      li
+                        dl
+                          dt Nodes
+                          dd Child nodes point to parent nodes, so nodes further “up the tree” are hashes of their respective children. Most hash trees implementations are binary, with each node under two child nodes, although more than two child nodes can be used under each node.
+                      li
+                        dl
+                          dt DAO
+                          dd An organization that runs autonomously, in a decentralized manner, that functions without the need for centralized parties to make decisions for the organization to grow, to be profitable, or *physically* exist.
+
+
+
+                //- li
+                //-   h3
+                //-     i.fa.fa-university.fa-fw
+                //-     span Education &amp; Certifications
+                //-     span.pull-right
+                //-       i.fa.fa-fw.fa-plus
+                //-   div
+                //-     ul
+                //-       li
+                //-         h1 Certified Bitcoin Professional
+                //-         h2 Crypto Currency Certification Consortium (2016)
+                //-         p A Certified Bitcoin Professional is knowledgeable about the Bitcoin blockchain, Bitcoin transactions, and how the Bitcoin network operates. CBPs are able to apply Bitcoin technology to their professional area of expertise and understand privacy aspects, double-spending, and other issues that relate to the currency.
+                //-       li
+                //-         h1 BSBA - Management Information Systems
+                //-         h2 University of Central Florida (2003-2005)
+                //-         p Course material covering a range of topics including finance, legal, and international business coupled with strategic management of information systems.
+                //-       li
+                //-         h1 Associate of the Arts
+                //-         h2 Indian River State College (2001-2003)
+                //-         p Course emphasis in business accounting and statistics with electives centered around computer science.
+                //-       li
+                //-         h1 Eagle Scout
+                //-         h2 Boy Scouts of America, Troop 840, Port Salerno, FL (2001)
+                //-         p Attained the rank of Eagle Scout, the highest rank awarded. Final project to plan, coordinate, and direct the constrution of a 10' x 10' public use pavillion.
+
+        div.bb-item
+          div.bb-custom-side.coverside
+            div#profile-cover
+              div.info.color-text
+                p.occupation Blockchain Specialist
+          div#profile-page.bb-custom-side.pagearea.profile
+            div.top.color-text
+              p
+                i.fa.fa-user.color-text &nbsp;
+                span Profile
+            div.bottom
+              img.profileImage(src="images/unicorn_x4.png",alt="Blockchain Unicorn")
+              
+              div.info
+                p.name Blockchain Unicorn
+                p.occupation Educating the internet about blockchain!
+
+
+
+

@@ -1,0 +1,615 @@
+* {
+    border: 0;
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.5s linear;
+}
+html, body {
+    overflow: hidden;
+}
+body {
+    /* background: url('../images/bgtile.png'); */
+}
+code, samp, pre {
+    font-family: monospace;
+    font-size: 90%;
+}
+div.menu-item > i {
+    padding-top: 10px;
+}
+div.socials > div > a > i {
+    margin-left: 2px;
+}
+.nowrap {
+    white-space: nowrap;
+}
+.right {
+    float: right;
+}
+.workspace {
+    height: 700px;
+    left: 50%;
+    margin: -350px 0 0 -436px;
+    position: absolute;
+    top: 50%;
+    width: 872px;
+    box-shadow: 0 6px 10px -4px #222222;
+}
+.workspace>.menu {
+    float: left;
+    height: 100%;
+    width: 70px;
+}
+.workspace>.content {
+    float: right;
+    height: 100%;
+    width: 802px;
+}
+.workspace>.content .pagearea {
+    box-sizing: border-box;
+    padding: 30px 0 15px 35px;
+}
+.workspace>.content .pagearea>div.top {
+    box-sizing: border-box;
+    height: 40px;
+    overflow: hidden;
+    padding-right: 20px;
+    width: 100%;
+}
+.workspace>.content .pagearea>div.top>p {
+    float: left;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.workspace>.content .pagearea>div.top>div.socials {
+    float: right;
+}
+.workspace>.content .pagearea>div.top>div.socials>div {
+    box-sizing: border-box;
+    cursor: pointer;
+    float: left;
+    height: 35px;
+    margin-left: 5px;
+    padding: 6px;
+    width: 35px;
+}
+.workspace>.content .pagearea>div.bottom {
+    height: 610px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+.workspace>.content .pagearea>div.bottom ul.filters {
+    list-style: none;
+    margin-bottom: 20px;
+}
+.workspace>.content .pagearea>div.bottom ul.filters>li {
+    background: #999999;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 30px;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    margin-right: 10px;
+}
+
+.workspace>.content .pagearea>div.bottom ul.gallery {
+    box-sizing: border-box;
+    height: auto;
+    list-style: none;
+    padding-right: 30px;
+    width: 100%;
+}
+.workspace>.content .pagearea>div.bottom ul.gallery>li {
+    cursor: pointer;
+    display: inline;
+    width: 48%;
+    font-size: 75%;
+}
+.workspace>.content .pagearea>div.bottom ul.gallery>li.gallery-left {
+    padding-right: 4%;
+}
+.workspace>.content .pagearea>div.bottom ul.gallery>li>a {
+    margin-bottom: 15px;
+}
+.workspace>.content .pagearea>div.bottom ul.gallery>li>a>img {
+    height: 100%;
+    max-height: 161px;
+    width: 100%;
+}
+
+
+
+.workspace>.content .pagearea.profile>div.bottom img.profileImage {
+    height: auto;
+    border: 10px solid slategray;
+    /*width: 335px;*/
+}
+.workspace>.content .pagearea.profile>div.bottom>p, .workspace>.content .pagearea.resume>div.bottom>p, .workspace>.content .pagearea.portfolio>div.bottom>p, .workspace>.content .pagearea.contact>div.bottom>p {
+    box-sizing: border-box;
+    font-size: 15px;
+    line-height: 25px;
+    padding-right: 31px;
+}
+.workspace>.content .pagearea.profile>div.bottom table {
+    box-sizing: border-box;
+    margin-top: 20px;
+    padding-right: 31px;
+}
+.workspace>.content .pagearea.profile>div.bottom table tr td {
+    color: #777777;
+    font-size: 17px;
+    line-height: 35px;
+}
+.workspace>.content .pagearea.profile>div.bottom table tr td.title {
+    font-weight: bold;
+    vertical-align: top;
+    width: 100px;
+}
+
+
+
+
+.workspace>.content .pagearea.resume>div.bottom ul li {
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    /*width: 336px;*/
+}
+.workspace>.content .pagearea.resume>div.bottom ul li div {
+    display: none;
+}
+.workspace>.content .pagearea.resume>div.bottom ul li div ul li {
+    padding: 10px;
+    margin-bottom: 0;
+}
+.workspace>.content .pagearea.resume>div.bottom ul li div ul li h1 {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+.workspace>.content .pagearea.resume>div.bottom ul li div ul li h2 {
+    color: #000000;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+.workspace>.content .pagearea.resume>div.bottom ul li div ul li p {
+    color: #000000;
+    font-size: 14px;
+}
+#skills tr td {
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 35px;
+}
+#skills tr td.skill {
+    color: #6C6C6C;
+    width: 120px;
+}
+#skills tr td.level {
+    width: 38px;
+}
+#skills tr td.skill-bar {
+    width: 170px;
+}
+#skills tr td.skill-bar>pre {
+    background-image: url('../images/progress.png');
+    height: 22px;
+}
+.workspace>.content .pagearea.resume>div.bottom ul li h3 {
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 4px 10px;
+    text-transform: uppercase;
+    /*width: 336px;*/
+}
+
+#page-cover {
+    background: url('../images/unicorn_x4.png');
+    background-size: cover;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+}
+#page-cover>div.socials {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: #3d3d3d;
+}
+#page-cover>div.socials>div {
+    box-sizing: border-box;
+    cursor: pointer;
+    float: left;
+    /*height: 35px;*/
+    margin-left: 5px;
+    padding: 6px;
+    /*width: 35px;*/
+}
+#page-cover>div.socials>div>a>div.icon {
+    height: 23px;
+    width: 23px;
+}
+#page-cover>div.info {
+    bottom: 20px;
+    position: absolute;
+    right: 20px;
+    text-shadow: 1px 1px 2px rgba(152, 150, 150, 1);
+}
+#page-cover>div.info>p.name {
+    font-size: 50px;
+    text-align: right;
+}
+#page-cover>div.info>p.occupation {
+    font-size: 25px;
+    text-align: right;
+}
+#profile-cover>div.info, #resume-cover>div.info, #portfolio-cover>div.info, #contact-cover>div.info {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 50%;
+}
+#profile-cover>div.info>p, #resume-cover>div.info>p, #portfolio-cover>div.info>p, #contact-cover>div.info>p {
+    font-weight: bolder;
+    padding: 27px;
+    text-shadow: 1px 1px #000000;
+}
+#profile-cover>div.info>p.name, #resume-cover>div.info>p.name, #portfolio-cover>div.info>p.name, #contact-cover>div.info>p.name {
+    font-size: 80px;
+}
+#profile-cover>div.info>p.occupation, #resume-cover>div.info>p.occupation, #portfolio-cover>div.info>p.occupation, #contact-cover>div.info>p.occupation {
+    font-size: 40px;
+    text-align: left;
+    margin-top: -75px;
+    color: white;
+}
+#profile-cover {
+    background: url('../images/covers/moon.jpg');
+    height: 100%;
+    width: 100%;
+}
+#portfolio-cover {
+    background: url('../images/covers/pidgeons.jpg');
+    height: 100%;
+    width: 100%;
+}
+#resume-cover {
+    background: url('../images/covers/chicago-trump-tower.jpg');
+    height: 100%;
+    width: 100%;
+}
+#contact-cover {
+    background: url('../images/covers/moon.jpg');
+    height: 100%;
+    width: 100%;
+}
+.menu>div>ul {
+    list-style-type: none;
+    padding: 22px;
+    width: 100%;
+}
+.menu>div>ul>li {
+    height: 35px;
+    margin-bottom: 15px;
+    width: 25px;
+}
+.menu-item {
+    /*padding: 5px;*/
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: bold;
+    height: 35px;
+    width: 25px;
+}
+.menu-item-block {
+    height: 35px;
+    overflow: hidden;
+    width: 25px;
+}
+.menu-item-block>.menu-item {
+    float: left;
+}
+.menu-item-block>p {
+    box-sizing: border-box;
+    cursor: pointer;
+    opacity: 0;
+    float: left;
+    font-size: 0;
+    font-weight: bold;
+    margin-left: 50px;
+    padding-top: 5px;
+    text-transform: uppercase;
+}
+.menu-item-block:hover>p {
+    font-size: 20px;
+    height: 35px;
+    opacity: 1;
+    transition-delay: 0.3s;
+}
+.menu-item-block:hover {
+    position: absolute;
+    z-index: 200;
+    transition: width 0.3s ease-in-out;
+    border-radius: 0px 20px 20px 0px;
+}
+#home>div.menu-item {
+    background-position: 0 0;
+}
+#profile>div.menu-item {
+    background-position: 0 -35px;
+}
+#resume>div.menu-item {
+    background-position: 0 -70px;
+}
+#portfolio>div.menu-item {
+    background-position: 0 -105px;
+}
+#contact>div.menu-item {
+    background-position: 0 -140px;
+}
+#home:hover {
+    width: 155px;
+}
+#profile:hover {
+    width: 175px;
+}
+#resume:hover {
+    width: 210px;
+}
+#portfolio:hover {
+    width: 210px;
+}
+#contact:hover {
+    width: 160px;
+}
+.da-thumbs li a div span {
+    margin-top: 20px !important;
+}
+
+/* Responsive */
+
+@media only screen and (max-height: 760px), (max-width: 875px) {
+    .workspace {
+        height: 631px;
+        margin: -315px 0 0 -393px;
+        width: 785px;
+    }
+    .workspace>.content {
+        width: 715px;
+    }
+    .workspace>.content .pagearea.profile>div.bottom img.profileImage, .workspace>.content .pagearea.resume>div.bottom ul li h3, .workspace>.content .pagearea.resume>div.bottom ul li, .workspace>.content .pagearea.contact>div.bottom iframe.map, .workspace>.content .pagearea.contact>div.bottom table tr td input[type='text'], .workspace>.content .pagearea.contact>div.bottom table tr td textarea {
+        width: 292px;
+    }
+    .workspace>.content .pagearea.profile>div.bottom p, .workspace>.content .pagearea.portfolio>div.bottom p, .workspace>.content .pagearea.contact>div.bottom p {
+        font-size: 13px;
+    }
+    .workspace>.content .pagearea.profile>div.bottom table {
+        margin-top: 10px;
+    }
+    .workspace>.content .pagearea>div.bottom {
+        height: 540px;
+    }
+    #profile-cover>div.info>p.name, #resume-cover>div.info>p.name, #portfolio-cover>div.info>p.name, #contact-cover>div.info>p.name {
+        font-size: 65px;
+    }
+    .workspace>.content .pagearea>div.top>div.socials>div {
+        height: 25px;
+        width: 25px;
+    }
+    .workspace>.content .pagearea>div.top>div.socials>div>a>div.icon {
+        background-size: cover;
+        height: 16px;
+        width: 16px;
+    }
+    .workspace>.content .pagearea>div.bottom ul.gallery>li>a>img {
+        max-height: 140px;
+    }
+    /*    .workspace>.content .pagearea>div.top>div.socials>div>a>div.icon.twitter { background-position: -16px 0;}
+    .workspace>.content .pagearea>div.top>div.socials>div>a>div.icon.gplus { background-position: -32px 0;}
+    .workspace>.content .pagearea>div.top>div.socials>div>a>div.icon.dribbble { background-position: -48px 0;}
+*/
+    
+    .workspace>.content .pagearea>div.top {
+        padding-right: 26px;
+    }
+    #skills tr td {
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width: 786px), (max-height: 630px) {
+    html, body {
+        height: 100%;
+        width: 100%;
+    }
+    .workspace {
+        left: 0;
+        margin: 0 auto;
+        max-width: 428px;
+        height: 100%;
+        position: relative;
+        top: 0;
+        width: 100%;
+    }
+    .workspace>.menu {
+        float: none;
+        height: 45px;
+        width: 100%;
+    }
+    .workspace>.menu>div {
+        text-align: center;
+        width: 100%;
+    }
+    .workspace>.menu>div>ul {
+        list-style-type: none;
+        padding: 5px 0;
+        width: 355px;
+        margin: 0 auto;
+    }
+    .workspace>.menu>div>ul>li {
+        height: 20px;
+        margin-bottom: 0;
+        width: 25px;
+        float: left;
+        margin: 0 23px;
+    }
+    .workspace>.content {
+        width: 100%;
+    }
+    .workspace>.content .pagearea {
+        padding: 20px 25px;
+    }
+    .workspace>.content .pagearea>div.bottom {
+        box-sizing: border-box;
+        height: 100%;
+        padding-bottom: 85px !important;
+    }
+    .workspace>.content .pagearea>div.top, .workspace>.content .pagearea.profile>div.bottom p, .workspace>.content .pagearea.contact>div.bottom p, .workspace>.content .pagearea>div.bottom ul.gallery {
+        padding-right: 0;
+    }
+    .workspace>.content .pagearea>div.bottom ul.gallery>li>a>img {
+        max-height: 181px;
+    }
+    #home:hover {
+        width: 35px;
+    }
+    #profile:hover {
+        width: 35px;
+    }
+    #resume:hover {
+        width: 35px;
+    }
+    #portfolio:hover {
+        width: 35px;
+    }
+    #contact:hover {
+        width: 35px;
+    }
+    .bb-custom-side {
+        width: 100% !important;
+    }
+    .coverside {
+        display: none;
+    }
+    .workspace>.content .pagearea.profile>div.bottom img.profileImage, .workspace>.content .pagearea.resume>div.bottom ul li h3, .workspace>.content .pagearea.resume>div.bottom ul li, .workspace>.content .pagearea.contact>div.bottom iframe.map, .workspace>.content .pagearea.contact>div.bottom form table tr td input[type='text'], .workspace>.content .pagearea.contact>div.bottom form table tr td textarea, .workspace>.content .pagearea.contact>div.bottom form table {
+        width: 100%;
+    }
+    .ps-scrollbar-y, .ps-scrollbar-x {
+        display: none;
+    }
+    #page-cover>div.info {
+        bottom: 65px;
+        float: right;
+        position: absolute;
+        right: 15px;
+    }
+    #page-cover>div.info>p.name {
+        font-size: 40px;
+        text-align: right;
+
+    }
+    #page-cover>div.info>p.occupation {
+        font-size: 20px;
+        text-align: right;
+    }
+    .workspace>.content .pagearea>div.bottom>table {
+        width: 100%;
+    }
+    .menu-item-block, .menu-item {
+        background-color: transparent !important;
+    }
+    #bb-bookblock {
+        z-index: 9999 !important;
+    }
+}
+@media only screen and (max-width: 370px) {
+    .workspace>.menu>div>ul>li {
+        margin: 0 20px;
+    }
+    .workspace>.menu>div>ul {
+        width: 325px;
+    }
+}
+@media only screen and (max-width: 330px) {
+    .workspace>.menu>div>ul>li {
+        margin: 0 13px;
+    }
+    .workspace>.menu>div>ul {
+        width: 255px;
+    }
+    #page-cover>div.info>p.name {
+        font-size: 50px;
+    }
+    #page-cover>div.info>p.occupation {
+        font-size: 30px;
+        margin-top: -10px;
+    }
+    #skills tr td {
+        font-size: 12px;
+    }
+    .workspace>.content .pagearea>div.top>p {
+        font-size: 16px;
+        padding-top: 5px;
+    }
+}
+@media only screen and (max-width: 270px) {
+    .workspace>.content .pagearea>div.top>p {
+        font-size: 14px;
+        padding-top: 6px;
+    }
+    #skills tr td {
+        font-size: 11px;
+    }
+    .workspace>.content .pagearea>div.bottom ul.filters>li {
+        padding: 5px 8px;
+    }
+}
+
+#profile-page div.socials {
+    text-align: center;
+    width: 100%;
+    float: left;
+}
+
+
+#profile-page div.socials>div {
+    box-sizing: border-box;
+    cursor: pointer;
+    float: left;
+    height: 35px;
+    margin-left: 5px;
+    padding: 6px;
+    width: 35px;
+}
+
+#profile-page div.socials>div>a>i {
+    height: 23px;
+    width: 23px;
+    color: black !important;
+}
+
+
+#page-cover .info {
+    color: white;
+}
+
+
+div.info>p.name {
+    margin-top: 1em;
+    font-size: 150%;
+    font-weight: bold;
+}
+div.info>p.occupation {
+    font-size: 150%;
+}

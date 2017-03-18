@@ -1,0 +1,42 @@
+i {
+  color: #ffffff;
+}
+.textcolor {
+  color: #777777 !important;
+}
+.color,
+input[type='submit'],
+.skill-bar > pre,
+.ps-container .ps-scrollbar-y {
+  background-color: #cccccc;
+}
+.color-text,
+.title,
+.level,
+h1 {
+  color: #333333;
+}
+#page-cover > .socials > div > a > i {
+  color: #333333;
+}
+#page-cover > .socials > div:hover,
+div.submit:hover {
+  background-color: #cccccc !important;
+  transition: all 0.5s linear;
+}
+.inputerror {
+  border-color: #cccccc !important;
+}
+.menu-item-block > p {
+  color: #ffffff;
+}
+.workspace > .content .pagearea.profile > div.bottom p,
+.workspace > .content .pagearea.contact > div.bottom p {
+  color: #000a24;
+}
+.workspace > .content .pagearea.resume > div.bottom ul li h3 {
+  background-color: #cccccc !important;
+}
+.workspace > .content .pagearea > div.bottom ul.filters > li.active {
+  background: menucolor;
+}
