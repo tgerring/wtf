@@ -65,12 +65,12 @@ div.socials > div > a > i {
     float: right;
 }
 .workspace {
-    height: 400px;
+    height: 256;
     left: 50%;
-    margin: -215px 0 0 -215px;
+    margin: -143 0 0 -143;
     position: absolute;
     top: 50%;
-    width: 400px;
+    width: 256;
     border: 15px solid slategray;
     box-shadow: 0 6px 10px -4px #222222;
 }
@@ -82,7 +82,7 @@ div.socials > div > a > i {
 .workspace>.content {
     float: right;
     height: 100%;
-    width: 400px;
+    width: 100%;
     background-color: silver;
 }
 .workspace>.content .pagearea {
@@ -281,7 +281,7 @@ div.socials > div > a > i {
     width: 23px;
 }
 #page-cover>div.info {
-    bottom: -75px;
+    bottom: -65px;
     position: absolute;
     right: 0;
     text-shadow: 2px 2px 4px rgba(152, 150, 150, 1);
