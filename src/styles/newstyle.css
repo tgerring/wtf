@@ -31,6 +31,7 @@
 .da-thumbs li a img {
     height: 200px;
     width: 200px;
+    border: 1px solid silver;
 }
 #page-cover h1 {
     font-size: 72pt;
