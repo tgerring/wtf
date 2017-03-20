@@ -1,6 +1,6 @@
 * {
     border: 0;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     margin: 0;
     padding: 0;
     transition: background-color 0.5s linear;
@@ -243,7 +243,7 @@ div.socials > div > a > i {
     bottom: 20px;
     position: absolute;
     right: 20px;
-    text-shadow: 1px 1px 2px rgba(152, 150, 150, 1);
+    /*text-shadow: 1px 1px 2px rgba(152, 150, 150, 1);*/
     color: slategray;
 }
 #page-cover>div.info>p.name {

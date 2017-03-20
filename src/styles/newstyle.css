@@ -23,6 +23,7 @@
     border: 1px dashed silver;
     padding: 1ex;
     margin: 1ex;
+    font-size: 125%;
 }
 .da-thumbs li {
     list-style-type: none;
@@ -34,9 +35,38 @@
     border: 1px solid silver;
 }
 #page-cover h1 {
-    font-size: 72pt;
+    font-size: 64pt;
 }
 #page-cover h2 {
-    font-size: 56pt;
+    font-size: 48pt;
     text-align: right;
+}
+.cursive {
+    font-family: 'Pacifico', cursive;
+}
+ul.gallery>li.basic>dl {
+    background-color: #b3ffa5;
+}
+ul.gallery>li.general>dl {
+    background-color: #a5eaff;
+}
+ul.gallery>li.technical>dl {
+    background-color: #f3f0a0;
+}
+.workspace>.content .pagearea>div.bottom ul.filters>li.all {
+    background-color: white;
+    border: 1px solid silver;
+    color: black;
+}
+.workspace>.content .pagearea>div.bottom ul.filters>li.basic {
+    background-color: #b3ffa5;
+    color: black;
+}
+.workspace>.content .pagearea>div.bottom ul.filters>li.general {
+    background-color: #a5eaff;
+    color: black;
+}
+.workspace>.content .pagearea>div.bottom ul.filters>li.technical {
+    background-color: #f3f0a0;
+    color: black;
 }
